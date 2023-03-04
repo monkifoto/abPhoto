@@ -5,6 +5,18 @@
     
 }
 
+.carousel_component{
+    position: relative;
+    background-color: white;
+    width: calc(100vw - 10rem);
+    height: fit-content;
+    min-height: 30vh; 
+    border-radius: 10px;
+    margin-inline: auto;
+    margin-bottom:4rem;
+    text-align: left;
+}
+
 .banner_image{
     background-image: url("http://source.unsplash.com/1024x768/?studio");
     mix-blend-mode: multiply;
