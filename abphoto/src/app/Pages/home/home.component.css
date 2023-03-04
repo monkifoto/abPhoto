@@ -1,0 +1,127 @@
+.pageContainer{
+    padding-top: 1rem;
+    box-sizing: border-box;
+    text-align: center;
+    
+}
+
+.banner_image{
+    background-image: url("http://source.unsplash.com/1024x768/?studio");
+    mix-blend-mode: multiply;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    width: calc(100vw - 10rem);
+    min-height: 60vh;
+    border-radius: 10px;
+    margin-inline: auto;
+    margin-bottom:4rem;
+    z-index: -1;
+}
+
+.banner_text {
+    width: inherit;
+    position: absolute;
+    text-transform: uppercase;
+    /* border: salmon solid 2px; */
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+    bottom: 0;
+    z-index: 1;
+    /* line-height: 3rem; */
+}
+
+.banner_content{
+    position: relative;
+    background-color: white;
+    width: calc(100vw - 10rem);
+    height: fit-content;
+    min-height: 30vh; 
+    border-radius: 10px;
+    margin-inline: auto;
+    margin-bottom:4rem;
+    z-index: -1;
+    padding: 5rem;
+    text-align: left;
+}
+
+.banner_content_text {
+    font-size: 1.3rem;
+    /* padding: 2rem; */
+    text-align: left;
+    bottom: 0;
+    z-index: 1;
+}
+
+.card_container{
+    width: calc(100vw - 10rem);
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    padding: 1rem;
+}
+
+ .dark-bg{
+    text-align: center;
+    background-color: black;
+    color: #fefefe;
+    font-size: 3rem;
+}
+.slider{
+    position: relative;
+    margin: 0;
+    left: 0;
+    overflow: hidden;
+    height: 50vh;
+
+}
+
+.slider figure {
+    /* border: 1px solid seagreen; */
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+
+.slider figure img{
+    width: 20%;
+    float: left;
+    object-fit: contain;
+    object-position: center;
+}
+
+@keyframes slider {
+
+    0% {
+        left:0;
+    }
+    20% {
+        left:0;
+    }
+    25% {
+        left:-100%;
+    }
+    45% {
+        left:-100%;
+    }
+    50% {
+        left:-200%;
+    }
+    70% {
+        left:-200%;
+    }
+    75% {
+        left:-300%;
+    }
+    95% {
+        left:-300%;
+    }
+
+    100% {
+        left:-400%;
+    }
+    
+}

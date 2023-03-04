@@ -1,0 +1,10 @@
+
+.footer {
+    margin-top:4rem;
+    display: flex;
+    width: 100%;
+    /* border: salmon solid 1px; */
+    gap: 1rem;
+    justify-content: center;
+}
+  

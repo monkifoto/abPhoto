@@ -1,0 +1,68 @@
+.navbar_container{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    /* border: solid 1px red; */
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.navbar_menu{
+   
+    width: 30vw;
+    height: 3rem;
+   /* border: solid 5px green; */
+   background-color: #fff;
+    display: flex;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.navbar_item{
+    text-decoration: none;
+}
+
+ li {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.flex{
+    display: flex;
+    gap:3rem;
+}
+
+.btn_logo{
+    margin-left: 5rem;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.btn_contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding-inline: 5rem;
+    height: 3rem;
+    width: fit-content;
+    border-radius: 50px;
+    margin-right:5rem;
+}
+
+.btn_contact > a {
+    color: #fff;
+}
