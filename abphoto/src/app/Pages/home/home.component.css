@@ -140,3 +140,7 @@
     flex: 1;
 
 }
+.card_banner{
+    width: 100%;
+    flex-basis: 100%;
+}
