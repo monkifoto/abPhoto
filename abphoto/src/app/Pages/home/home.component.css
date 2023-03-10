@@ -17,8 +17,15 @@
     margin-bottom:4rem;
     
 }
+.card_container{
+    display: flex;
+    gap: 2rem;
+    margin-inline: auto;
+    justify-content: center;
+    padding: 1rem;
+}
 
-.banner_image{
+/* .banner_image{
     background-image: url("http://source.unsplash.com/1024x768/?studio");
     mix-blend-mode: multiply;
     background-size: cover;
@@ -29,10 +36,12 @@
     margin-inline: auto;
     margin-bottom:4rem;
     z-index: -1;
-}
+} */
 
-.banner_text {
-    width: inherit;
+.jumbotron_text {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
     position: absolute;
     text-transform: uppercase;
     /* border: salmon solid 2px; */
@@ -45,6 +54,7 @@
 }
 
 .banner_content{
+    display: flex;
     position: relative;
     background-color: white;
     height: fit-content;
@@ -55,6 +65,7 @@
     z-index: -1;
     padding: 5rem;
     text-align: left;
+    flex-wrap: wrap;
 }
 
 .banner_content_text {
@@ -65,18 +76,23 @@
     z-index: 1;
 }
 
-.card_container{
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    padding: 1rem;
-}
+
 
  .dark-bg{
     text-align: center;
     background-color: hsl(var(--clr-dark));
     color: hsl(var(--clr-light));
     font-size: 3rem;
+}
+
+.experience_container{
+    display: flex;
+}
+
+.experience_item{
+    text-align: center;
+    flex: 1;
+    line-height: .1rem;
 }
 
 @media screen and  (max-width: 35rem) 
@@ -113,4 +129,14 @@
     .dark-bg{
         font-size: 1rem;
     }
+}
+
+.banner_image{
+    flex: 1;
+    width: 50%;
+}
+
+.banner_text{
+    flex: 1;
+
 }

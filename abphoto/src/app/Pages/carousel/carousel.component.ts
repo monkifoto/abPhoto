@@ -55,7 +55,7 @@ export class CarouselComponent implements OnInit {
 
       hideShowArrows(targetIndex, prevButton, nextButton, slides);
       console.log("setTimeout direction: " + direction);
-  }, 5000);
+  }, 8000);
   
     
   
