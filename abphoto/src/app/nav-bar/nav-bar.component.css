@@ -11,6 +11,8 @@
 }
 
 .primary-header {
+    display: flex;
+    flex: 1;
   justify-content: space-between;
   align-items: center;
 
@@ -63,6 +65,22 @@ li{
     width: 100%;
   }
 
+  .btn_contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding-inline: 5rem;
+    height: 3rem;
+    width: fit-content;
+    border-radius: 50px;
+    margin-right:5rem;
+    color: hsl(var(--clr-white));
+}
+
+.btn_contact a {
+    color: hsl(var(--clr-white));
+}
 
   @media (max-width: 35rem) 
   {
@@ -127,18 +145,43 @@ li{
        border: 0;
     }
 
+    nav {
+        border-radius: 0px;
+        background-color: #fff ;
+        padding-inline: 0;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
     .logo {
+        /* width: 100%; */
         max-height: 3rem;
-        padding:inset;
-        padding: 0 0 0 1rem ;
+        padding:unset;
+        padding: 0 ;
         margin: 0;
+        flex: 0;
+        white-space: nowrap;
       }
     
       .logo a {
-        font-size: var(--fs-400);
-        
+        font-size: var(--fs-500);   
+        padding-left: 1rem;
       }
       .reg{display: none;}
+
+      .primary-header {
+        display: flex;
+        justify-content: left;
+      }
+      .contact_container{
+        display: flex;
+        flex: 1;
+      }
+      .btn_contact{
+        padding-inline: 3rem;
+      }
+     
   }
 
 /* @media (min-width: 35em) {
@@ -217,20 +260,3 @@ li{
 
 
 
-.btn_contact{
-    display: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    padding-inline: 5rem;
-    height: 3rem;
-    width: fit-content;
-    border-radius: 50px;
-    margin-right:5rem;
-    color: hsl(var(--clr-white));
-}
-
-.btn_contact a {
-    color: hsl(var(--clr-white));
-}

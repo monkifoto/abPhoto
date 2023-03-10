@@ -10,8 +10,6 @@ export class CarouselComponent implements OnInit {
 
   ngOnInit(){
 
-    console.log("ngOnInit");
-  
     const track = document.querySelector('.carousel__track') as HTMLDivElement;
     console.log(track);
     const slides = Array.from(track?.children) as Element[];
@@ -21,6 +19,45 @@ export class CarouselComponent implements OnInit {
     const dots = Array.from(dotsNav?.children);
     
     const slideWidth = slides[0].getBoundingClientRect().width;
+    console.log("ngOnInit");
+    let direction : number = 0; 
+    let nextSlide : any = null;
+    let targetDot : any = null;
+    let targetIndex : any = null;
+
+    setInterval(function() {
+     
+      const currentSlide = document.querySelector('.current_slide') as HTMLDivElement;
+      const curDot = dotsNav.querySelector('.current_slide') as HTMLButtonElement;
+      if( direction == 0 ){
+        nextSlide = currentSlide?.nextElementSibling as HTMLDivElement;
+        targetDot = curDot.nextElementSibling as HTMLButtonElement;
+        if(nextSlide == null){
+          direction = 1;
+          nextSlide = currentSlide?.previousElementSibling as HTMLDivElement;
+          targetDot = curDot.previousElementSibling as HTMLButtonElement;
+        }
+      }
+      else{
+        nextSlide = currentSlide?.previousElementSibling as HTMLDivElement;
+        targetDot = curDot.previousElementSibling as HTMLButtonElement;
+        if(nextSlide == null){
+          direction = 0;
+          nextSlide = currentSlide?.nextElementSibling as HTMLDivElement;
+          targetDot = curDot.nextElementSibling as HTMLButtonElement;
+        }
+      }
+     
+      const targetIndex = slides.findIndex(slide => slide === nextSlide);
+      moveToSlide(currentSlide, nextSlide);
+
+      updateDots(curDot, targetDot);
+
+      hideShowArrows(targetIndex, prevButton, nextButton, slides);
+      console.log("setTimeout direction: " + direction);
+  }, 5000);
+  
+    
   
     const setSlidePosition = (slide:any, index:any) => {
       slide.style.left = slideWidth * index + 'px'; 
@@ -32,6 +69,8 @@ export class CarouselComponent implements OnInit {
       (document.querySelector('.carousel__track') as HTMLDivElement).style.transform = 'translateX(-' + targetSlide?.style.left + ')';
       currentSlide.classList.remove('current_slide');
       targetSlide.classList.add('current_slide');
+
+     
   
      }
   
