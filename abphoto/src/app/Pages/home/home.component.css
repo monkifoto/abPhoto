@@ -82,6 +82,7 @@
 .banner_content_text{
     flex-grow: 1;
     line-height: 1.3;
+    font-family: var(--ff-source-sans-pro);
 }
 
 .experience_container{
