@@ -1,3 +1,8 @@
+.testimonial__heading{
+    text-align: center;
+padding: 3rem;
+}
+
 .testimonals{
     width: 100%;
     display: flex;
@@ -11,9 +16,13 @@
     width: 400px;
     height: 400px;
     background-color: hsl( var( --clr-light) );
-    padding: 1rem;
+    padding: 2rem;
 
 }
+.testimonial__text{
+    height: 160px;
+}
+
 .testimonial__image_container
 {
     display: flex;
