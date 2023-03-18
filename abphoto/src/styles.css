@@ -4,6 +4,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,500;0,600;0,700;1,500;1,600;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;1,300&family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,600;0,900;1,200&display=swap');
 
+app-root{
+    padding: 0;
+    margin: 0;
+}
+
 :root {
     /* colors */
     --clr-dark: 217 10% 25%;
@@ -26,6 +31,7 @@
     --ff-sans-cond: "Barlow Condensed", sans-serif;
     --ff-sans-normal: "Barlow", sans-serif;
     --ff-source-sans-pro: "Source Sans Pro", sans-serif;
+    --ff-Montserrat: 'Montserrat', sans-serif;
 }
 
 
@@ -36,7 +42,7 @@
 }
 
 html{
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--ff-Montserrat);
 }
 
 .italic{
@@ -46,6 +52,8 @@ html{
 }
 
 body{
+    margin: 0;
+    padding: 0;
     margin-inline: auto;
     font-family: var(--ff-sans-normal);
     font-size: var(--fs-400);
@@ -115,6 +123,7 @@ picutre {
 .letter-spacing-2 { letter-spacing: 2.7px; } 
 .letter-spacing-3 { letter-spacing: 2.35px; } 
 .letter-spacing-4 { letter-spacing: .5px; } 
+.letter-spacing-5 { letter-spacing: 1.1px; } 
 
 .uppercase { text-transform: uppercase; }
 
@@ -142,3 +151,4 @@ a {
     /* your styles for the main content here */
     flex-grow: 1;
   }
+

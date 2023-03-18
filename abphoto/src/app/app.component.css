@@ -1,0 +1,15 @@
+.bottom{
+    background-color: hsl(var(--clr-dark));
+    color:hsl(var(--clr-light));
+    width: 100%;
+}
+.content{
+    width: 100%; /* Set the container to take up the full width of its parent element */
+    max-width: 100rem; /* Set a maximum width of 1600px */
+    margin: 0 auto;
+}
+@media (max-width: 100rem) {
+    .content {
+      max-width: 1440px; /* Set the maximum width to 1440px when the viewport is greater than 1600px */
+    }
+  }
