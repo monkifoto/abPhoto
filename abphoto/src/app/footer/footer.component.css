@@ -4,7 +4,7 @@
 
   background-color: hsl(var(--clr-dark));
   color:hsl(var(--clr-light));
-  width: 100%;
+  /* width: 100%; */
   /* background-color: aquamarine; */
   display: flex;
   flex-wrap: wrap;
@@ -42,11 +42,11 @@
    
 }
 
-.footer_content{
+/* .footer_content{
     margin-top:4rem;
     display: flex;
     width: 100%;
-    /* border: salmon solid 1px; */
+     border: salmon solid 1px; 
     gap: 1rem;
     justify-content: center;
 }
@@ -54,4 +54,28 @@
     background-color: hsl(var(--clr-dark));
     color:hsl(var(--clr-light));
     width: 100%;
-  }
+  } */
+
+  .banner{
+    width: calc(100% - 10rem);
+}
+
+.banner_content{
+  display: flex;
+  position: relative;
+  background-color: white;
+  height: fit-content;
+  min-height: 30vh; 
+  border-radius: 10px;
+  margin-inline: auto;
+  margin-bottom:4rem;
+  z-index: -1;
+  padding: 5rem;
+  text-align: left;
+  flex-wrap: wrap;
+}
+
+.dark-bg{
+  background-color: hsl(var(--clr-dark));
+  color: hsl(var(--clr-light));
+}

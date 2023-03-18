@@ -11,10 +11,11 @@ app-root{
 
 :root {
     /* colors */
-    --clr-dark: 217 10% 25%;
-    /* --clr-light: 37 53% 89%; */
-    --clr-light: 240 9% 96%;
+    --clr-dark: 217 10% 25%; /*#393E46*/
+    --clr-light: 0 0% 97%; /*#F7F7F7*/
     --clr-white: 0 0% 100%;
+    --cl-green: 155 17% 51%; /*#6D9886*/
+    --clr-tan: 37 53% 89%; /*#F2E7D5*/
     
     /* font-sizes */
     --fs-900: clamp(5rem, 10vw + 1rem, 9.375rem);
