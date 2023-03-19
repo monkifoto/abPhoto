@@ -20,6 +20,7 @@
 
 }
 .testimonial__text{
+    color:  var(--background);
     height: 160px;
 }
 

@@ -5,9 +5,7 @@
     
 }
 
-.banner{
-    width: calc(100% - 10rem);
-}
+
 
 .carousel_component{
     position: relative;
@@ -53,20 +51,6 @@
     /* line-height: 3rem; */
 }
 
-.banner_content{
-    display: flex;
-    position: relative;
-    background-color: white;
-    height: fit-content;
-    min-height: 30vh; 
-    border-radius: 10px;
-    margin-inline: auto;
-    margin-bottom:4rem;
-    z-index: -1;
-    padding: 5rem;
-    text-align: left;
-    flex-wrap: wrap;
-}
 
 .banner_content_text {
     text-align: left;

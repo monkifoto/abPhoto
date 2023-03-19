@@ -8,36 +8,33 @@
     font-size: var(--fs-600);
     font-weight: 900;
     font-weight: bolder;
-    color: hsl(var(--clr-Dark));
+    color: var(--foreground);
     font-family: var(--ff-Montserrat);
 }
 
 .primary-header {
     display: flex;
     flex: 1;
-  justify-content: space-between;
-  align-items: center;
-
+    justify-content: space-between;
+    align-items: center;
 }
+
 nav {
     border-radius: 50px;
     background-color: #fff ;
     padding-inline: 3rem;
-    font-family: var(--ff-);
+    font-family: var(--ff-Montserrat);
 }
 
 .primary-navigation {
     --gap: clamp(1.5rem, 3vw, 4.5rem);
     width: 100%;
     height: 3.5rem;
-  
     align-items: center;
     list-style: none;
     padding: 0;
     margin: 0;
-
     z-index: 1000;
-    /* background-color: #fff; */
 }
 
 .primary-navigation a {
@@ -67,6 +64,21 @@ nav {
   display: none;
 }
 
+  
+.dark-mode-toggle {
+  position: absolute;
+  z-index: 100;
+  top: 1em;
+  right: 1em;
+  color: var(--foreground);
+  border: 2px solid currentColor;
+  padding: 4px;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+}
 
 
 li{
@@ -132,6 +144,7 @@ li{
       z-index: 2000;
       right: 1rem;
       top: 1.5rem;
+      color: var(--foreground);
       background: transparent;
       background-image: url(../../assets/shared/icon-hamburger.svg);
       background-repeat: no-repeat;
@@ -190,7 +203,21 @@ li{
       .btn_contact{
         padding-inline: 3rem;
       }
-     
+       
+  .dark-mode-toggle {
+    position: relative;
+    z-index: 100;
+    top: 1em;
+    right: 1em;
+    color: var(--foreground);
+    border: 2px solid currentColor;
+    padding: 4px;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+  }
   }
 
 /* @media (min-width: 35em) {
