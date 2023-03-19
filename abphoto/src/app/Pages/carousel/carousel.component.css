@@ -16,7 +16,7 @@
 
 .carousel__track-container{
     position: relative;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     height: 100%;
     overflow: hidden;
     border-radius: 10px;

@@ -37,3 +37,24 @@
 .footer_section .link a img {
   display: inline;
 }
+
+
+@media screen and  (max-width: 35rem) 
+{  
+    .banner_text{
+        display: flex;
+        gap: 2rem;
+        font-size: 1rem;
+    }
+
+    .banner{
+       
+        width: calc(100% - 1rem);
+    }
+
+    .banner_content{
+        padding: 1rem;
+    }
+
+
+  }

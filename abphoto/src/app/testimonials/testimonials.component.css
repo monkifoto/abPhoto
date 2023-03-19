@@ -20,8 +20,9 @@
 
 }
 .testimonial__text{
-    color:  var(--background);
+    color:  hsl(var(--clr-green));
     height: 160px;
+    font-style: italic;
 }
 
 .testimonial__image_container
