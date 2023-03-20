@@ -23,7 +23,7 @@
 }
 
 .section2{
-  flex: 0 0 50%
+  flex: 1 0 50%
 }
 
 .footer_section .link a{
@@ -38,4 +38,10 @@
   display: inline;
 }
 
+@media screen and  (max-width: 35rem) 
+{ 
+  .section2{
+    flex: 1 0 100%
+  }
+}
 
