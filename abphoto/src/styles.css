@@ -85,7 +85,7 @@ body{
   
     --foreground:  hsl( var(--clr-light));
     --background:  hsl( var(--clr-dark));
-    --shadow: hsl( var(--clr-light)/ 0.20);
+    --shadow: hsl( var(--clr-light)/ 0.30);
     
   }
 

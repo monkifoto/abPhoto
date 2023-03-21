@@ -19,11 +19,15 @@
 
 .section1
 .section3{
-  flex: 0 0 10%;
+  flex: 0 0 20%;
+}
+
+.section3 a img{
+  padding-right: 1rem;
 }
 
 .section2{
-  flex: 1 0 50%
+  flex: 1 0 30%
 }
 
 .footer_section .link a{
