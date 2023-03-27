@@ -14,6 +14,8 @@ import { ProductsComponent } from './Pages/products/products.component';
 import { CarouselComponent } from './Pages/carousel/carousel.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { BrandsComponent } from './brands/brands.component';
+import { TableCardComponent } from './table-card/table-card.component';
+import { TableCardListComponent } from './table-card-list/table-card-list.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { BrandsComponent } from './brands/brands.component';
     ProductsComponent,
     CarouselComponent,
     TestimonialsComponent,
-    BrandsComponent
+    BrandsComponent,
+    TableCardComponent,
+    TableCardListComponent
   ],
   imports: [
     BrowserModule,
