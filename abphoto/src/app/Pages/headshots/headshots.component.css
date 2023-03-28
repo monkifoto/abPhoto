@@ -23,6 +23,10 @@
   padding: 2rem;
 }
 
+.gallery__text > div{
+  padding: 3rem;
+}
+
 img {
   filter: grayscale(100%);
 }
