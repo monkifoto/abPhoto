@@ -92,7 +92,8 @@ h1 {
   }
 
   .product__image_grid  img{
-    width: 500px;
+    /* width: 500px; */
+    width: clamp(300px, 500px, 500px);
   }
  
   .product__title_grid{
@@ -107,6 +108,7 @@ h1 {
   }
 
   .product__title_grid h2{
+    font-size: calc(1rem + 1vw);
     display: inline-block;
     position: absolute;
     left: 1rem; 

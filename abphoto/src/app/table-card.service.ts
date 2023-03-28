@@ -32,7 +32,9 @@ export class TableCardService {
     this.listOfCards.push(card);
   }
 
-  RemoveCard(index: number, card: TableCard) {
-    this.listOfCards.slice(0, 1); // Removed the first one
+  RemoveCard(index: number) {
+    console.log(index);
+    this.listOfCards.splice(index, 1); 
+    console.log(this.listOfCards);
   }
 }

@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { TableCard } from '../table-card.model';
+import { TableCardService } from '../table-card.service';
 
 @Component({
   selector: 'app-table-card',
@@ -8,10 +9,15 @@ import { TableCard } from '../table-card.model';
 })
 export class TableCardComponent {
   @Input() tableCard?: TableCard;
+  @Input() index : number = 0;
 
-  constructor(){};
+  constructor(private tblSvc : TableCardService){};
 
   ngOnInit():void{
     console.log(this.tableCard);
+  }
+
+  onDelete(){
+    this.tblSvc.RemoveCard(this.index);
   }
 }
