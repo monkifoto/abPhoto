@@ -24,10 +24,10 @@
     <div class="card_banner_content"><div class="text-dark fs-600 --ff-source-sans-pro">Expertly crafted studio photography that captures your unique essence.</div></div>
     </div>
     <div class="card_container">
-    <app-card [url]="url_0"></app-card>
-    <app-card [url]="url_1"></app-card>
-    <app-card [url]="url_2"></app-card>
-    <app-card [url]="url_3"></app-card>
+        <a href="#" routerLink="/studio" routerLinkActive="active"> <app-card [url]="url_0"></app-card></a>
+        <a href="#" routerLink="/headshot" routerLinkActive="active"><app-card [url]="url_1"></app-card></a>
+        <a href="#" routerLink="/portrait" routerLinkActive="active"><app-card [url]="url_2"></app-card></a>
+        <a href="#" routerLink="/product" routerLinkActive="active"><app-card [url]="url_3"></app-card></a>
     </div>
     </div>
     <div class="banner banner_content">
@@ -40,6 +40,7 @@
     </div>
     <div class="banner banner_content">
         <h1 class="letter-spacing-1"> Something for everyone</h1>
+        <app-sample-code></app-sample-code>
     </div>
     
 </div>

@@ -16,6 +16,7 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { BrandsComponent } from './brands/brands.component';
 import { TableCardComponent } from './table-card/table-card.component';
 import { TableCardListComponent } from './table-card-list/table-card-list.component';
+import { SampleCodeComponent } from './sample-code/sample-code.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { TableCardListComponent } from './table-card-list/table-card-list.compon
     TestimonialsComponent,
     BrandsComponent,
     TableCardComponent,
-    TableCardListComponent
+    TableCardListComponent,
+    SampleCodeComponent
   ],
   imports: [
     BrowserModule,

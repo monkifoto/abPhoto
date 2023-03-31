@@ -1,4 +1,10 @@
 
+.active{
+  cursor: pointer;
+  padding: var(--underline-gap, .5rem) 0;
+  border: 0;
+  border-bottom: .2rem solid hsl( var(--clr-dark) / .5);
+}
 .logo {
   padding-left: 2rem;  
   margin: 1.5rem clamp(2.5rem, 4vw, 3.5rem);
