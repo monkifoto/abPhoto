@@ -1,0 +1,15 @@
+.item {
+  border: 1px solid red;
+  padding: 10px;
+}
+
+.main-dev {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: solid red 1px;
+}
+
+.item5 {
+  grid-column: 1 / 2;
+  /* or grid-column: 1 / span 2 */
+}

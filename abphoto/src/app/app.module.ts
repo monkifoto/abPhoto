@@ -17,6 +17,7 @@ import { BrandsComponent } from './brands/brands.component';
 import { TableCardComponent } from './table-card/table-card.component';
 import { TableCardListComponent } from './table-card-list/table-card-list.component';
 import { SampleCodeComponent } from './sample-code/sample-code.component';
+import { ServicesComponent } from './Pages/services/services.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { SampleCodeComponent } from './sample-code/sample-code.component';
     BrandsComponent,
     TableCardComponent,
     TableCardListComponent,
-    SampleCodeComponent
+    SampleCodeComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,
