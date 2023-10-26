@@ -7,6 +7,9 @@
     border-radius: 10px;
     position: relative;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .card_item_title{
@@ -20,10 +23,11 @@
 
 .card_item_subtitle{
     color: #F3F3F5;
-    width: 100%;
+    width: 70%;
     position: absolute;
-    bottom:3rem;
+    bottom:2rem;
     font-weight: 200;
+    text-transform: capitalize;
 }
 
 .gradient {

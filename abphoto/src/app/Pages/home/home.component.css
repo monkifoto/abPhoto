@@ -10,7 +10,7 @@ h1 {
     padding-top: 1rem;
     box-sizing: border-box;
     text-align: center;
-    
+
 }
 
 
@@ -18,10 +18,10 @@ h1 {
 .carousel_component{
     position: relative;
     height: fit-content;
-    min-height: 30vh; 
+    min-height: 30vh;
     margin-inline: auto;
     margin-bottom:4rem;
-    
+
 }
 .card_container{
     display: flex;
@@ -80,7 +80,7 @@ h1 {
 .experience_container{
     display: flex;
     flex-grow: 1;
- 
+
 }
 
  .dark-bg{
@@ -103,7 +103,7 @@ h1 {
     flex-wrap: wrap;
 }
 
-@media screen and  (max-width: 35rem) 
+@media screen and  (max-width: 35rem)
 {   .jumbotron_text{
         font-size: 1rem;
         line-height: 1.1;
@@ -115,7 +115,7 @@ h1 {
     }
 
     .banner{
-       
+
         width: calc(100% - 1rem);
     }
 
@@ -130,7 +130,7 @@ h1 {
     .carousel_component{
     position: relative;
     height: fit-content;
-    min-height: 20vh; 
+    min-height: 20vh;
     margin-inline: auto;
     margin-bottom:3rem;
     }
@@ -155,7 +155,7 @@ h1 {
 
 }
 .card_banner{
-    
+
     display: flex;
     gap: 0;
     flex-wrap: wrap;
@@ -175,3 +175,15 @@ h1 {
     flex-shrink: 0;
     flex-basis: 100%;
 }
+
+
+
+  .aboutme_image{
+    width: 300px;
+    float: left;
+    padding-right: 3rem;
+  }
+
+  .aboutMeBlock{
+    display: block;
+  }

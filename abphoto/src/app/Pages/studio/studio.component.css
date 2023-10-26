@@ -4,7 +4,7 @@
     display: flex;
     scroll-snap-type: x mandatory;
   }
-  
+
   .carousel__slide {
     height: 768px;
     width: 200px;
@@ -13,13 +13,13 @@
     flex-shrink: 0;
     scroll-snap-align: start;
   }
-  
+
   .dots {
     width: 100%;
     display: flex;
     justify-content: center;
   }
-  
+
   .dot {
     all: unset;
     margin-right: 5px;
@@ -29,7 +29,7 @@
     background: gray;
     margin-top: 10px;
   }
-  
+
   .dot:focus {
     outline: 1px solid blue;
   }
@@ -56,4 +56,15 @@
 
 .carousel__button img{
   width: 5vw;
+}
+.experience_container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.experience_item{
+  flex-grow: 1;
+  text-align: center;
+
 }
