@@ -6,7 +6,42 @@
 .gallery__container{
   display: flex;
   flex-wrap: wrap;
-  background-color: hsl(var(--clr-green));
+  background-color: lightgray;
+}
+
+.packages_container{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.package{
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: aquamarine; */
+  /* width: 33.33%; */
+}
+.package_title{
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.package_price{
+  text-align: center;
+  width: 100%;
+}
+
+.package_details{
+  width: 100%;
+  text-align: center;
+}
+
+.package_details ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .image_container{
