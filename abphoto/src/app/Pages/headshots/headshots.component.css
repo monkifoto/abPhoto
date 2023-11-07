@@ -17,16 +17,26 @@
 }
 
 .packages_container{
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-columns: repeat(auto-fill, minmax(33.33%, 1fr)); */
+  grid-gap: 10px;
+
+}
+
+.extra_container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: repeat(auto-fill, minmax(33.33%, 1fr)); */
+  grid-gap: 1rem;
+
 }
 
 .package{
   display: flex;
   flex-wrap: wrap;
-  /* background-color: aquamarine; */
-  /* width: 33.33%; */
+  flex-basis: content;
+  background-color: hsl( var(--clr-light));
 }
 .package_title{
   width: 100%;
@@ -51,9 +61,31 @@
   padding: 0;
 }
 
-.gallery_text_description{
-  /* line-height: .8; */
+.contact_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 0;
 }
+
+.btn_bookMe{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  padding-inline: 1.5rem;
+  height: 1.5rem;
+/* width: fit-content; */
+  border-radius: 50px;
+  color: hsl(var(--clr-white));
+}
+
+.btn_bookMe a {
+  color: hsl(var(--clr-white));
+  text-transform: none;
+}
+
 
 
 .gallery__text{
@@ -81,21 +113,47 @@ img {
   flex: 1;
   padding: 3rem;
 }
+@media screen and  (max-width: 45rem)
+{
+  .gallery__container{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: burlywood;
+
+  }
+}
 
 @media screen and  (max-width: 35rem)
 {
+  .gallery__container{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: aquamarine;
+
+  }
+
+  .packages_container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+
+  .extra_container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+
   .image_container{
     width: 100%;
     height: 100%;
-    background-color: aquamarine;
-    border: 1px red solid;
   }
   .gallery__text{
     width: 100%;
     height: 100%;
   }
   .gallery_text_description{
-    display: none;
+    /* display: none; */
     line-height: .9;
   }
 
