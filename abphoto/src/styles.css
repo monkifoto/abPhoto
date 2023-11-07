@@ -10,7 +10,7 @@ app-root{
 }
 
 :root {
- 
+
     /* colors */
     --clr-dark: 217 10% 25%; /*#393E46*/
     --clr-light: 0 0% 97%; /*#F7F7F7*/
@@ -22,7 +22,7 @@ app-root{
     --foreground:  hsl( var(--clr-dark));
     --background:  hsl( var(--clr-light));
     --shadow: hsl( var(--clr-dark)/ 0.20);
-    
+
     /* font-sizes */
     --fs-900: clamp(5rem, 10vw + 1rem, 9.375rem);
     --fs-800: 3.5rem;
@@ -32,7 +32,7 @@ app-root{
     --fs-400: 1rem;
     --fs-300: 0.9375rem;
     --fs-200: 0.875rem;
-    
+
     /* font-families */
     --ff-serif: "Bellefair", serif;
     --ff-sans-cond: "Barlow Condensed", sans-serif;
@@ -82,11 +82,11 @@ body{
     --clr-primary: #202302;
     --clr-secondary: #00100d;
     --clr-accent: #ff7750;
-  
+
     --foreground:  hsl( var(--clr-light));
     --background:  hsl( var(--clr-dark));
     --shadow: hsl( var(--clr-light)/ 0.30);
-    
+
   }
 
 /* make images easier to work with */
@@ -116,11 +116,11 @@ picutre {
 
 
 .sr-only {
-    position: absolute; 
+    position: absolute;
     width: 1px;
     height: 1px;
     padding: 0;
-    margin: -1px; 
+    margin: -1px;
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     white-space: nowrap; /* added line */
@@ -139,15 +139,15 @@ picutre {
 
 /* typography */
 
-.ff-serif { font-family: var(--ff-serif); } 
-.ff-sans-cond { font-family: var(--ff-sans-cond); } 
-.ff-sans-normal { font-family: var(--ff-sans-normal); } 
+.ff-serif { font-family: var(--ff-serif); }
+.ff-sans-cond { font-family: var(--ff-sans-cond); }
+.ff-sans-normal { font-family: var(--ff-sans-normal); }
 
-.letter-spacing-1 { letter-spacing: 4.75px; } 
-.letter-spacing-2 { letter-spacing: 2.7px; } 
-.letter-spacing-3 { letter-spacing: 2.35px; } 
-.letter-spacing-4 { letter-spacing: .5px; } 
-.letter-spacing-5 { letter-spacing: 1.1px; } 
+.letter-spacing-1 { letter-spacing: 4.75px; }
+.letter-spacing-2 { letter-spacing: 2.7px; }
+.letter-spacing-3 { letter-spacing: 2.35px; }
+.letter-spacing-4 { letter-spacing: .5px; }
+.letter-spacing-5 { letter-spacing: 1.1px; }
 
 .uppercase { text-transform: uppercase; }
 
@@ -166,7 +166,7 @@ picutre {
 .fs-600 {
     line-height: 1.1;
 }
-  
+
 a {
     text-decoration: none;
     text-transform: uppercase;
@@ -186,7 +186,7 @@ a {
     position: relative;
     background-color: white;
     height: fit-content;
-    min-height: 30vh; 
+    min-height: 30vh;
     border-radius: 10px;
     margin-inline: auto;
     margin-bottom:4rem;
@@ -203,8 +203,8 @@ a {
 }
 
 
-@media screen and  (max-width: 35rem) 
-{  
+@media screen and  (max-width: 35rem)
+{
     .banner_text{
         display: flex;
         gap: 2rem;
@@ -212,7 +212,7 @@ a {
     }
 
     .banner{
-       
+
         width: calc(100% - 1rem);
     }
 

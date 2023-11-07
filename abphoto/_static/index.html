@@ -1,11 +1,89 @@
-<!DOCTYPE html><html lang="en"><head>
-  <meta charset="utf-8">
-  <title>Abphoto</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-<style>@import"https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,500;0,600;0,700;1,500;1,600;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;1,300&family=Roboto&display=swap";@import"https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,600;0,900;1,200&display=swap";app-root{padding:0;margin:0}:root{--clr-dark:217 10% 25%;--clr-light:0 0% 97%;--clr-white:0 0% 100%;--clr-green:155 17% 51%;--clr-tan:37 53% 89%;--foreground:hsl( var(--clr-dark));--background:hsl( var(--clr-light));--shadow:hsl( var(--clr-dark)/ .2);--fs-900:clamp(5rem, 10vw + 1rem, 9.375rem);--fs-800:3.5rem;--fs-700:2.5rem;--fs-600:2rem;--fs-500:1.5rem;--fs-400:1rem;--fs-300:.9375rem;--fs-200:.875rem;--ff-serif:"Bellefair", serif;--ff-sans-cond:"Barlow Condensed", sans-serif;--ff-sans-normal:"Barlow", sans-serif;--ff-source-sans-pro:"Source Sans Pro", sans-serif;--ff-Montserrat:"Montserrat", sans-serif}*,*:before,*:after{box-sizing:border-box}html{font-family:var(--ff-Montserrat)}body{margin:0;padding:0;margin-inline:auto;font-family:var(--ff-sans-normal);font-size:var(--fs-400);background:var(--background);color:var(--foreground);line-height:1.5;display:flex;flex-direction:column;min-height:100vh}</style><link rel="stylesheet" href="styles.8110825f1d54a7f3.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.8110825f1d54a7f3.css"></noscript></head>
-<body>
-  <app-root></app-root>
-<script src="runtime.5efc85e5a8077146.js" type="module"></script><script src="polyfills.94ad8e9d874728ed.js" type="module"></script><script src="main.966fcf293b2bdccf.js" type="module"></script>
-</body></html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Firebase Hosting</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/10.5.2/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/10.5.2/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/10.5.2/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/10.5.2/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/10.5.2/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/10.5.2/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/10.5.2/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/10.5.2/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/10.5.2/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/10.5.2/firebase-performance-compat.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
+    <style media="screen">
+      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
+      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
+      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
+      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
+      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
+      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
+      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
+      @media (max-width: 600px) {
+        body, #message { margin-top: 0; background: white; box-shadow: none; }
+        body { border-top: 16px solid #ffa100; }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="message">
+      <h2>Welcome</h2>
+      <h1>Firebase Hosting Setup Complete</h1>
+      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
+      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+    </div>
+    <p id="load">Firebase SDK Loading&hellip;</p>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const loadEl = document.querySelector('#load');
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.firestore().doc('/foo/bar').get().then(() => { });
+        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        // firebase.analytics(); // call to activate
+        // firebase.analytics().logEvent('tutorial_completed');
+        // firebase.performance(); // call to activate
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+        try {
+          let app = firebase.app();
+          let features = [
+            'auth', 
+            'database', 
+            'firestore',
+            'functions',
+            'messaging', 
+            'storage', 
+            'analytics', 
+            'remoteConfig',
+            'performance',
+          ].filter(feature => typeof app[feature] === 'function');
+          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script>
+  </body>
+</html>
