@@ -1,14 +1,10 @@
-<table class="blogPosts">
-  <thead>
-    <th>ID</th>
-    <th>Title</th>
-    <th>Content</th>
-  </thead>
-  <tbody>
-    <tr *ngFor="let post of listOfPosts; let i = index">
-      <td>{{post['postID']}}</td>
-      <td>{{post['postTitle']}}</td>
-      <td>{{post['postContent']}}</td>
-    </tr>
-  </tbody>
-</table>
+
+
+    <div *ngFor="let post of listOfPosts; let i = index">
+      <div class="banner banner_content">
+        <div class="page__container">
+      <div class="blogTitle">{{post['postTitle']}}</div>
+      <div [innerHTML]="post.postContent"></div>
+    </div>
+  </div>
+</div>

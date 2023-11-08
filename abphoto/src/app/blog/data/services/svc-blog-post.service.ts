@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { BlogPost } from '../models/blog-post.model';
 import { Firestore } from '@angular/fire/firestore';
-import { AngularFirestore } from '@angular/fire/compat/firestore';
+import { AngularFirestore,AngularFirestoreCollection } from '@angular/fire/compat/firestore';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs';
 
@@ -20,38 +20,46 @@ export class SVCBlogPostService {
   // ]
 
   listOfPosts: BlogPost[] = [];
+  blogPosts: AngularFirestoreCollection<BlogPost>;
 
-   constructor(private afs: AngularFirestore) { }
+
+   constructor(private afs: AngularFirestore) {
+      this.blogPosts = afs.collection("blog");
+    }
 
    ngOnInit() {
 
   }
 
-  GetPosts(){
-    this.afs
-    .collection('blog')
-    .get()
-    .subscribe((snapshot) => {
-      const blogs = snapshot.docs.map((doc:any) => {
-        return {
-          postID: doc.data().ID,
-          postTitle: doc.data().Title,
-          postContent: doc.data().Content,
-          Date: doc.data().Date,
-          Creator: doc.data().Creator
-        };
-      });
-      console.log(blogs);
-    });
-    return this.listOfPosts;
+  getAll():AngularFirestoreCollection<BlogPost>{
+    return this.blogPosts;
   }
 
+  // GetPosts(){
+  //   this.afs
+  //   .collection('blog')
+  //   .get()
+  //   .subscribe((snapshot) => {
+  //     const blogs = snapshot.docs.map((doc:any) => {
+  //       return {
+  //         postID: doc.data().ID,
+  //         postTitle: doc.data().Title,
+  //         postContent: doc.data().Content,
+  //         Date: doc.data().Date,
+  //         Creator: doc.data().Creator
+  //       };
+  //     });
+  //     console.log(blogs);
+  //   });
+  //   return this.listOfPosts;
+  // }
 
-  GetAllPosts(): BlogPost[] {
+
+  // GetAllPosts(): BlogPost[] {
 
 
-      return this.listOfPosts;
-  }
+  //     return this.listOfPosts;
+  // }
 
 
 }
