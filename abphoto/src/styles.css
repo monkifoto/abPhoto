@@ -169,7 +169,7 @@ picutre {
 
 a {
     text-decoration: none;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 .content {
     /* your styles for the main content here */
@@ -202,6 +202,37 @@ a {
     color: hsl(var(--clr-light));
 }
 
+/* BLOG */
+.blogTitle{
+  font-size: calc(3rem + 2vw);
+  color: hsl(var(--clr-green));
+  max-width: 50%;
+  font-family: var( --ff-Montserrat);
+  margin: 0 0 0.25em;
+  line-height: 1;
+  /* border: #ff7750 solid 1px; */
+  padding: 3rem 0;
+}
+
+.blogPostImageContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.blogPostImage{
+  flex: 0 0 calc(33.33% - 20px); /* Three items per row with some spacing */
+  margin: 10px;
+}
+
+.blogPostImage img{
+  max-width: 100%;
+  height: auto;
+}
+
+.blogPostHeading{
+  font-size: 1.1rem;
+}
 
 @media screen and  (max-width: 35rem)
 {

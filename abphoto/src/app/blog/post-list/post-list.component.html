@@ -3,6 +3,7 @@
     <div *ngFor="let post of listOfPosts; let i = index">
       <div class="banner banner_content">
         <div class="page__container">
+          <div style="width: 100%; text-align: right;">{{post['postDate']}}</div>
       <div class="blogTitle">{{post['postTitle']}}</div>
       <div [innerHTML]="post.postContent"></div>
     </div>

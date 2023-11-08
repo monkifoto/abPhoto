@@ -30,12 +30,12 @@
 nav {
     border-radius: 50px;
     background-color: #fff ;
-    padding-inline: 3rem;
+    padding-inline: 2rem;
     font-family: var(--ff-Montserrat);
 }
 
 .primary-navigation {
-    --gap: clamp(1.5rem, 3vw, 4.5rem);
+    --gap: clamp(1rem, 2vw, 4rem);
     width: 100%;
     height: 3.5rem;
     align-items: center;
@@ -109,6 +109,46 @@ li{
 
 .btn_contact a {
     color: hsl(var(--clr-white));
+}
+
+@media (max-width: 75rem)
+{
+  .primary-navigation {
+    --gap: clamp(.5rem, 2vw, 2rem);
+    width: 100%;
+    height: 2.5rem;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+}
+.btn_contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  padding-inline: 2rem;
+  height: 2.5rem;
+  width: fit-content;
+  border-radius: 50px;
+  margin-right:5rem;
+  color: hsl(var(--clr-white));
+  font-family: var(--ff-Montserrat);
+}
+.logo a{
+  /* font-size: var(--fs-600); */
+  font-weight: 700;
+  font-weight: bolder;
+  /* color: var(--foreground); */
+  color: hsl(var(--clr-green));
+  font-family: var(--ff-Montserrat);
+}
+.logo {
+  padding-left: 1rem;
+  margin: 1.5rem clamp(5rem, 2vw, 1.5rem);
+
+}
 }
 
   @media (max-width: 35rem)

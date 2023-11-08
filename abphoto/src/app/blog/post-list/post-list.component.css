@@ -1,0 +1,15 @@
+.blogPostImageContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.blogPostImage{
+  flex: 0 0 calc(33.33% - 20px); /* Three items per row with some spacing */
+  margin: 10px;
+}
+
+.blogPostImage img{
+  max-width: 100%;
+  height: auto;
+}
