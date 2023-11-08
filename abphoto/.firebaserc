@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "abphoto-ce0b8"
+  },
+  "targets": {
+    "abphoto-ce0b8": {
+      "hosting": {
+        "abphoto": [
+          "abphoto-ce0b8"
+        ]
+      }
+    }
   }
 }

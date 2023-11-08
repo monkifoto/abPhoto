@@ -18,6 +18,14 @@ import { TableCardComponent } from './table-card/table-card.component';
 import { TableCardListComponent } from './table-card-list/table-card-list.component';
 import { SampleCodeComponent } from './sample-code/sample-code.component';
 import { ServicesComponent } from './Pages/services/services.component';
+import { PostListComponent } from './blog/post-list/post-list.component';
+import { ViewPostComponent } from './blog/view-post/view-post.component';
+import { NewPostComponent } from './blog/new-post/new-post.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { provideStorage,getStorage } from '@angular/fire/storage';
+import { FIREBASE_OPTIONS } from '@angular/fire/compat';
 
 @NgModule({
   declarations: [
@@ -36,13 +44,20 @@ import { ServicesComponent } from './Pages/services/services.component';
     TableCardComponent,
     TableCardListComponent,
     SampleCodeComponent,
-    ServicesComponent
+    ServicesComponent,
+    PostListComponent,
+    ViewPostComponent,
+    NewPostComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideFirestore(() => getFirestore()),
+    provideStorage(() => getStorage())
   ],
-  providers: [],
+  providers: [{ provide: FIREBASE_OPTIONS, useValue: environment.firebase }],
+  // providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
