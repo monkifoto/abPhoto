@@ -32,6 +32,7 @@ app-root{
     --fs-400: 1rem;
     --fs-300: 0.9375rem;
     --fs-200: 0.875rem;
+    --fs-100: 0.775rem;
 
     /* font-families */
     --ff-serif: "Bellefair", serif;

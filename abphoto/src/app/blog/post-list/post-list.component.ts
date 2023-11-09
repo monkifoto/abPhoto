@@ -29,11 +29,16 @@ export class PostListComponent {
         )
       )
     ).subscribe(data=>{
+
       this.listOfPosts = data;
+      this.listOfPosts?.sort((a,b) => new Date(b.postDate).getTime() - new Date(a.postDate).getTime());
       console.log(data);
     });
 
-  this.listOfPosts?.forEach(p => (console.log(p.toString()+ '----------Test')));
+
+    // console.log(this.listOfPosts);
+// this.listOfPosts?.sort((a,b) => a.postDate.localeCompare(b.postDate));
+  //this.listOfPosts?.forEach(p => (console.log(p.toString()+ '----------Test')));
   }
 
 }
