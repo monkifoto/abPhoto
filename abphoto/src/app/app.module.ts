@@ -26,6 +26,7 @@ import { environment } from '../environments/environment';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { provideStorage,getStorage } from '@angular/fire/storage';
 import { FIREBASE_OPTIONS } from '@angular/fire/compat';
+import { TestPageComponent } from './Pages/test-page/test-page.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { FIREBASE_OPTIONS } from '@angular/fire/compat';
     ServicesComponent,
     PostListComponent,
     ViewPostComponent,
-    NewPostComponent
+    NewPostComponent,
+    TestPageComponent
   ],
   imports: [
     BrowserModule,

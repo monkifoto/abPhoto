@@ -183,18 +183,18 @@ a {
 }
 
 .banner_content{
-    display: flex;
-    position: relative;
-    background-color: white;
-    height: fit-content;
-    min-height: 30vh;
-    border-radius: 10px;
-    margin-inline: auto;
-    margin-bottom:4rem;
-    /* z-index: -1; */
-    padding: 5rem;
-    text-align: left;
-    flex-wrap: wrap;
+  display: flex;
+  position: relative;
+  background-color: white;
+  height: fit-content;
+  min-height: 30vh;
+  border-radius: 25px;
+  margin-inline: auto;
+  margin-bottom:4rem;
+  /* z-index: -1; */
+  padding: 3rem;
+  text-align: left;
+  flex-wrap: wrap;
 }
 
 .dark-bg{

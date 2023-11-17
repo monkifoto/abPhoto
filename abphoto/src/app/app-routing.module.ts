@@ -7,6 +7,7 @@ import { ProductsComponent } from './Pages/products/products.component';
 import { StudioComponent } from './Pages/studio/studio.component';
 import { ServicesComponent } from './Pages/services/services.component';
 import { PostListComponent } from './blog/post-list/post-list.component';
+import { TestPageComponent } from './Pages/test-page/test-page.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -16,7 +17,8 @@ const routes: Routes = [
   {path: 'portrait', component: PortraitsComponent},
   {path: 'product', component: ProductsComponent},
   {path: 'services', component: ServicesComponent},
-  {path: 'blog', component: PostListComponent }
+  {path: 'blog', component: PostListComponent },
+  {path: 'test', component: TestPageComponent}
 ];
 
 @NgModule({
