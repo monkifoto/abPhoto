@@ -13,3 +13,65 @@
   max-width: 100%;
   height: auto;
 }
+
+
+.repeater-section-container {
+  display: flex;
+  font-size: calc(1.1rem);
+  line-height: 1.6;
+  font-weight: 600;
+  width: 100%;
+  color: antiquewhite;
+}
+
+/* Child divs */
+.section_div {
+  flex: 1;
+  flex-basis: 50%;
+  padding: 20px;
+}
+
+.section_image{
+padding: 0;
+align-items: right;
+justify-content: right;
+}
+
+.section_title{
+font-size: calc(2rem + 1.5vw);
+font-weight: 700;
+color: hsl(var(--clr-light));
+max-width: 70%;
+font-family: var( --ff-Montserrat);
+margin: 0 0 0.25em;
+line-height: 1;
+/* border: #ff7750 solid 1px; */
+padding: 3rem 0;
+}
+
+
+
+.square {
+float:left;
+position: relative;
+width: 23%;
+padding-bottom : 23%; /* = width for a 1:1 aspect ratio */
+margin:1.66%;
+background-position:center center;
+background-repeat:no-repeat;
+background-size:cover; /* you change this to "contain" if you don't want the images to be cropped */
+}
+
+.grid_3Columns{
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.square {
+  background-color: #ddd;
+  padding: 20px;
+  text-align: center;
+}
